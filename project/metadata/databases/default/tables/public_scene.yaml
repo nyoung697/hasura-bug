@@ -1,0 +1,17 @@
+table:
+  name: scene
+  schema: public
+object_relationships:
+  - name: project
+    using:
+      foreign_key_constraint_on: project_id
+array_relationships:
+  - name: scene_resources
+    using:
+      foreign_key_constraint_on:
+        columns:
+          - scene_id
+          - project_id
+        table:
+          name: scene_resource
+          schema: public

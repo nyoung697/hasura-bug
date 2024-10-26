@@ -1,0 +1,4 @@
+- "!include public_project.yaml"
+- "!include public_resource.yaml"
+- "!include public_scene.yaml"
+- "!include public_scene_resource.yaml"
